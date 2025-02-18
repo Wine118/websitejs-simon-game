@@ -1,0 +1,128 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+.level {
+  font-family: 'Press Start 2P', cursive; /* Matching game title font */
+  font-size: 1rem; /* Readable size */
+  color: #FFD166; /* Bright yellow-orange for visibility */
+  text-shadow: 2px 2px 0 #FF6F61, 4px 4px 0 #06D6A0; /* Fun neon shadow */
+  background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+  display: inline-block;
+  padding: 5px 5px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+
+#level-title {
+  font-family: 'Luckiest Guy', cursive; /* Fun, playful font */
+  font-size: 3rem; /* Slightly larger for emphasis */
+  margin: 0.5%;
+  color: #FEF2BF; /* Light yellow color for contrast */
+  text-shadow: 
+    2px 2px 0 #FF6F61, /* Pink shadow for depth */
+    4px 4px 0 #FFD166, /* Yellow shadow for fun */
+    6px 6px 0 #06D6A0; /* Green shadow for a retro vibe */
+  letter-spacing: 3px; /* Add spacing between letters for a playful look */
+  text-transform: uppercase; /* Make the text uppercase for more impact */
+}
+
+.container {
+  position: relative;
+  width: 445px; /* Increased to accommodate the gaps */
+  height: 445px; /* Increased to accommodate the gaps */
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  position: absolute;
+  width: 200px; /* Original size */
+  height: 200px; /* Original size */
+  border: 10px solid black;
+  border-radius: 20px; /* Rounded corners for the quarter circles */
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.green {
+  background-color: green;
+  border-top-left-radius: 100%; /* Top-left quarter-circle */
+  top: 0;
+  left: 0;
+  margin-right: 5px; /* Gap between green and red */
+  margin-bottom: 5px; /* Gap between green and yellow */
+}
+
+.red {
+  background-color: red;
+  border-top-right-radius: 100%; /* Top-right quarter-circle */
+  top: 0;
+  right: 0;
+  margin-left: 5px; /* Gap between red and green */
+  margin-bottom: 5px; /* Gap between red and blue */
+}
+
+.yellow {
+  background-color: yellow;
+  border-bottom-left-radius: 100%; /* Bottom-left quarter-circle */
+  bottom: 0;
+  left: 0;
+  margin-right: 5px; /* Gap between yellow and blue */
+  margin-top: 5px; /* Gap between yellow and green */
+}
+
+.blue {
+  background-color: blue;
+  border-bottom-right-radius: 100%; /* Bottom-right quarter-circle */
+  bottom: 0;
+  right: 0;
+  margin-left: 5px; /* Gap between blue and yellow */
+  margin-top: 5px; /* Gap between blue and red */
+}
+
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+footer {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.8rem;
+  color: #FEF2BF;
+  background-color: transparent;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.reset {
+  position: absolute;
+  top: 20px; /* Adjust as needed for distance from the top */
+  left: 10px; /* Adjust as needed for distance from the left */
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  color: #FFD166; /* Bright yellow color */
+  text-shadow: 2px 2px 0 #FF6F61, 4px 4px 0 #06D6A0; /* Neon text shadow */
+  background-color: rgba(255, 255, 255, 0.1); /* Light background */
+  padding: 10px 20px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  display: inline-block;
+
+}
+
+.reset:hover {
+  background-color: #FF6F61; /* Hover color for effect */
+  color: white; /* White text when hovered */
+}
